@@ -21,9 +21,6 @@ load_dotenv()
 # 用登录信息连接数据库
 执行 = 登录.cursor() 
 
-
-
-
 # 3. 编写SQL语句’select ... from ...‘
 sql调用语句 ='select vbill_date,total_income from erp_fd_fundforecast where org_name="新兴化工材料有限公司" '
 # 执行编写好的SQL语句
@@ -31,22 +28,15 @@ sql调用语句 ='select vbill_date,total_income from erp_fd_fundforecast where 
 # 获取数据
 数据=执行.fetchall() 
 
-
-
 # 4.将数据以表格的形式存储在电脑内存中。
 收入合计 = pd.DataFrame(数据,columns=['日期','收入合计'])
 收入合计[['收入合计']] = 收入合计[['收入合计']].astype(float)
 收入合计[['日期']] =收入合计[['日期']].astype(str)
 
-
-
-
 # 5. 提交请求，关闭数据库连接，打印查看取得的数据明细。
 登录.commit()
 登录.close()
 print(收入合计)
-
-
 
 # 6. 保存为Excel文件
 收入合计.to_excel('收入合计.xlsx')
