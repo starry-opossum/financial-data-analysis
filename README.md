@@ -197,20 +197,3 @@ python3 3_calculate_update_cost.py
 **starry-opossum** · [GitHub 主页](https://github.com/starry-opossum)
 
 > 项目基于新道 DBE5cloud 平台开发，所有数据均为模拟，仅用于学习与作品集展示。
-```
-
----
-
-## 如何使用
-
-1. 打开您项目根目录的 `README.md` 文件。
-2. **全选并删除**原有内容。
-3. **粘贴**上述新内容。
-4. 保存并提交到 GitHub：
-
-```bash
-cd ~/Desktop/DBE5cloud-Local/financial-data-analysis
-git add README.md
-git commit -m "docs: 更新README，反映当前两个实际模块（融资需求测算+固定资产）"
-git push origin main
-```
