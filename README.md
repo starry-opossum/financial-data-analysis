@@ -189,6 +189,3 @@ DB_NAME=your_database
 **starry-opossum** · [GitHub 主页](https://github.com/starry-opossum)
 
 > 项目基于新道 DBE5cloud 平台开发，所有数据均为模拟，仅用于学习与作品集展示。
-```
-
----
