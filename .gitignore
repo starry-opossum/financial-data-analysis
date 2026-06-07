@@ -217,3 +217,4 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 .env
+固定资产管理/*.xlsx
